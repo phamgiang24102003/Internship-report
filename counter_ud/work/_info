@@ -1,0 +1,79 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/phamgiang/ModelSim_project/counter_ud
+vcounter_ud
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1752462425
+!i10b 1
+!s100 <_lN12WDh49U:`1el0bWR3
+If`BJL1N3olMcTP5=b;:@i2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 tb_sv_unit
+S1
+R0
+w1752462215
+8counter_ud.sv
+Fcounter_ud.sv
+L0 3
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1752462425.000000
+Z7 !s107 counter_ud.sv|cud_if.sv|tb.sv|
+Z8 !s90 tb.sv|
+!i113 1
+Z9 tCvgOpt 0
+Ycud_if
+R1
+R2
+!i10b 1
+!s100 Gh?]OmNHI`E^N@RID?OWF1
+I=:VO1YYUGXFfF]kCENREz1
+R3
+R4
+S1
+R0
+w1752461372
+8cud_if.sv
+Fcud_if.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+vtb
+R1
+R2
+!i10b 1
+!s100 cF]XjOAMGzBWIdSJFYnc<3
+IhjM67FbjnV<CZU@1jk<OP1
+R3
+R4
+S1
+R0
+w1752462422
+8tb.sv
+Ftb.sv
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9

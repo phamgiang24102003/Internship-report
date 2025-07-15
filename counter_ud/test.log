@@ -1,0 +1,54 @@
+# vsim -debugDB -l test.log -voptargs="+acc" -assertdebug -c tb -do "log -r /*; run -all;" 
+# Start time: 10:07:08 on Jul 14,2025
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.cud_if
+# Loading work.counter_ud
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# It appears vopt was not run with -debugdb option on this design.
+# Advanced Causality and Schematic debug features will not be available.
+# log -r /*
+#  run -all
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# [10000 ns] count = 0, ud = 1, rollover = 0
+# [30000 ns] count = 0, ud = 1, rollover = 0
+# [50000 ns] count = 5, ud = 1, rollover = 0
+# [70000 ns] count = 6, ud = 1, rollover = 0
+# [90000 ns] count = 7, ud = 1, rollover = 0
+# [110000 ns] count = 8, ud = 1, rollover = 0
+# [130000 ns] count = 9, ud = 1, rollover = 0
+# [150000 ns] count = 10, ud = 1, rollover = 0
+# [170000 ns] count = 11, ud = 1, rollover = 0
+# [190000 ns] count = 12, ud = 1, rollover = 0
+# [210000 ns] count = 13, ud = 1, rollover = 0
+# [230000 ns] count = 14, ud = 1, rollover = 0
+# [250000 ns] count = 15, ud = 1, rollover = 1
+# [270000 ns] count = 0, ud = 1, rollover = 0
+# [290000 ns] count = 1, ud = 1, rollover = 0
+# [310000 ns] count = 2, ud = 1, rollover = 0
+# [330000 ns] count = 3, ud = 1, rollover = 0
+# [350000 ns] count = 4, ud = 1, rollover = 0
+# [370000 ns] count = 5, ud = 1, rollover = 0
+# [390000 ns] count = 6, ud = 1, rollover = 0
+# [410000 ns] count = 7, ud = 1, rollover = 0
+# [430000 ns] count = 8, ud = 1, rollover = 0
+# [450000 ns] count = 9, ud = 1, rollover = 0
+# [470000 ns] count = 10, ud = 1, rollover = 0
+# [490000 ns] count = 11, ud = 1, rollover = 0
+# [510000 ns] count = 12, ud = 1, rollover = 0
+# [530000 ns] count = 13, ud = 1, rollover = 0
+# [550000 ns] count = 14, ud = 1, rollover = 0
+# [570000 ns] count = 13, ud = 0, rollover = 0
+# [590000 ns] count = 12, ud = 0, rollover = 0
+# [610000 ns] count = 11, ud = 0, rollover = 0
+# ** Note: $finish    : tb.sv(41)
+#    Time: 610 ns  Iteration: 1  Instance: /tb
+# End time: 10:07:08 on Jul 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
