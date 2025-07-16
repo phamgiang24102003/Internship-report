@@ -1,0 +1,36 @@
+						Báo cáo thực tập
+Họ và tên: Phạm Trường Giang
+
+Thời gian: 07/07/2025 - 16/07/2025
+
+Công việc làm được:
+- Đọc tài liệu "SystemVerilog for Verification" Mục 1, Verification Guidelines:
+•	Quá trình kiểm thử
+•	Lên kế hoạch kiểm thử
+•	Chuẩn kiểm thử UVM
+•	Chức năng, thành phần và hiệu suất của Testbench
+•	Các phương pháp kiểm thử (Trực tiếp, ngẫu nhiên)
+•	Độ bao phủ chức năng (Functional coverage)
+•	Testbench phân tầng
+- Đọc tài liệu "SystemVerilog for Verification" Mục 4, Connecting the Testbench and Design:
+•	Interface
+•	Modport
+•	Clocking block
+•	Race condition
+•	Program block
+- Đọc tài liệu "SystemVerilog for Verification" Mục 6, Randomization:
+•	Randomization
+•	Class
+•	Constraint và thứ tự rang buộc
+•	Sử dụng randomize và kiểm tra kết quả
+•	Randcase và decision tree
+- Viết testbench kiểm thử module chuyển đổi với các chức năng sau:
+•	Chuyển đổi tín hiệu dữ liệu 8-bit đầu vào thành tín hiệu dữ liệu 1-bit đầu ra (bộ chuyển đổi song song sang nối tiếp).
+•	Tín hiệu dữ liệu 8-bit (DATA_IN[7:0]) chỉ hợp lệ khi tín hiệu VALID ở mức cao (High).
+•	Tín hiệu đầu ra 1-bit có thể bao gồm một bit chẵn lẻ (parity bit) tùy theo cấu hình đầu vào PARITY_MODE[1:0].
+(Testbench viết dựa trên các mục đã đọc ở trên) Link github: https://github.com/phamgiang24102003/Internship-report
+
+Công việc muốn hoàn thành trước ngày 28/07:
+- Đọc xong các mục 8, 9, 11 tài liệu "SystemVerilog for Verification"
+- Nắm được Functional Coverage và UVM
+- Xây dựng một testbench hoàn chỉnh
