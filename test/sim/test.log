@@ -1,11 +1,13 @@
 # vsim -debugDB -l test.log -voptargs="+acc" -assertdebug -c test_bench -do "log -r /*; run -all;" 
-# Start time: 13:40:24 on Jul 16,2025
+# Start time: 17:04:00 on Jul 16,2025
 # Loading sv_std.std
 # Loading work.test_bench_sv_unit
 # Loading work.test_bench
 # Loading work.tb_if
 # Loading work.top
-# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# It appears vopt was not run with -debugdb option on this design.
+# Advanced Causality and Schematic debug features will not be available.
 # log -r /*
 #  run -all
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
@@ -19,86 +21,86 @@
 # Starting TEST BENCH...
 # TEST CASE 1: TEST RESET HIGH
 # Time  RST_N   VALID   PARITY  DATA_IN  TXD
-# 11000	0	0	00	00	0
-# 31000	0	1	01	ff	0
+# 11	0	0	00	00	0
+# 31	0	1	01	ff	0
 # END TEST CASE 1
 # TEST CASE 2: TEST VALID LOW
 # Time  RST_N   VALID   PARITY  DATA_IN  TXD
-# 51000	0	0	00	00	0
-# 71000	1	0	01	ff	0
-# 91000	1	0	01	ff	0
-# 111000	1	0	01	ff	0
-# 131000	1	0	01	ff	0
-# 151000	1	0	01	ff	0
-# 171000	1	0	01	ff	0
-# 191000	1	0	01	ff	0
-# 211000	1	0	01	ff	0
-# 231000	1	0	01	ff	0
-# 251000	1	0	01	ff	0
-# 271000	0	0	00	00	0
-# 291000	0	0	00	00	0
-# 311000	0	0	00	00	0
-# 331000	0	0	00	00	0
-# 351000	0	0	00	00	0
-# 371000	0	0	00	00	0
-# 391000	0	0	00	00	0
-# 411000	0	0	00	00	0
-# 431000	0	0	00	00	0
-# 451000	0	0	00	00	0
+# 51	0	0	00	00	0
+# 71	1	0	01	ff	0
+# 91	1	0	01	ff	0
+# 111	1	0	01	ff	0
+# 131	1	0	01	ff	0
+# 151	1	0	01	ff	0
+# 171	1	0	01	ff	0
+# 191	1	0	01	ff	0
+# 211	1	0	01	ff	0
+# 231	1	0	01	ff	0
+# 251	1	0	01	ff	0
+# 271	0	0	00	00	0
+# 291	0	0	00	00	0
+# 311	0	0	00	00	0
+# 331	0	0	00	00	0
+# 351	0	0	00	00	0
+# 371	0	0	00	00	0
+# 391	0	0	00	00	0
+# 411	0	0	00	00	0
+# 431	0	0	00	00	0
+# 451	0	0	00	00	0
 # END TEST CASE 2
-# 471000	1	0	00	00	0
+# 471	1	0	00	00	0
 # TEST CASE 3: PARITY_MODE = {00 11}, DATA_IN = {8'ha3 8'hFF}
 # Time  RST_N   VALID   PARITY  DATA_IN  TXD
-# 491000	1	1	00	a3	0
-# 511000	1	0	00	00	1
-# 531000	1	0	00	00	1
-# 551000	1	0	00	00	0
-# 571000	1	0	00	00	0
-# 591000	1	0	00	00	0
-# 611000	1	0	00	00	1
-# 631000	1	0	00	00	0
-# 651000	1	0	00	00	1
-# 671000	1	0	00	00	0
-# 691000	1	0	00	00	0
-# 711000	1	1	11	ff	0
-# 731000	1	0	11	00	1
-# 751000	1	0	11	00	1
-# 771000	1	0	11	00	1
-# 791000	1	0	11	00	1
-# 811000	1	0	11	00	1
-# 831000	1	0	11	00	1
-# 851000	1	0	11	00	1
-# 871000	1	0	11	00	1
-# 891000	1	0	11	00	0
-# 911000	1	0	11	00	0
+# 491	1	1	00	a3	0
+# 511	1	0	00	00	1
+# 531	1	0	00	00	1
+# 551	1	0	00	00	0
+# 571	1	0	00	00	0
+# 591	1	0	00	00	0
+# 611	1	0	00	00	1
+# 631	1	0	00	00	0
+# 651	1	0	00	00	1
+# 671	1	0	00	00	0
+# 691	1	0	00	00	0
+# 711	1	1	11	ff	0
+# 731	1	0	11	00	1
+# 751	1	0	11	00	1
+# 771	1	0	11	00	1
+# 791	1	0	11	00	1
+# 811	1	0	11	00	1
+# 831	1	0	11	00	1
+# 851	1	0	11	00	1
+# 871	1	0	11	00	1
+# 891	1	0	11	00	0
+# 911	1	0	11	00	0
 # END TEST CASE 3
 # TEST CASE 4: PARITY_MODE = 01, DATA_IN = 8'hF4
 # Time  RST_N   VALID   PARITY  DATA_IN  TXD
-# 931000	1	1	01	f4	0
-# 951000	1	0	01	00	0
-# 971000	1	0	01	00	0
-# 991000	1	0	01	00	1
-# 1011000	1	0	01	00	0
-# 1031000	1	0	01	00	1
-# 1051000	1	0	01	00	1
-# 1071000	1	0	01	00	1
-# 1091000	1	0	01	00	1
-# 1111000	1	0	01	00	0
-# 1131000	1	0	01	00	0
+# 931	1	1	01	f4	0
+# 951	1	0	01	00	0
+# 971	1	0	01	00	0
+# 991	1	0	01	00	1
+# 1011	1	0	01	00	0
+# 1031	1	0	01	00	1
+# 1051	1	0	01	00	1
+# 1071	1	0	01	00	1
+# 1091	1	0	01	00	1
+# 1111	1	0	01	00	0
+# 1131	1	0	01	00	0
 # END TEST CASE 4
 # TEST CASE 5: PARITY_MODE = 10, DATA_IN = 8'h4F
 # Time  RST_N   VALID   PARITY  DATA_IN  TXD
-# 1151000	1	1	10	4f	0
-# 1171000	1	0	10	00	1
-# 1191000	1	0	10	00	1
-# 1211000	1	0	10	00	1
-# 1231000	1	0	10	00	1
-# 1251000	1	0	10	00	0
-# 1271000	1	0	10	00	0
-# 1291000	1	0	10	00	1
-# 1311000	1	0	10	00	0
-# 1331000	1	0	10	00	1
-# 1351000	1	0	10	00	0
+# 1151	1	1	10	4f	0
+# 1171	1	0	10	00	1
+# 1191	1	0	10	00	1
+# 1211	1	0	10	00	1
+# 1231	1	0	10	00	1
+# 1251	1	0	10	00	0
+# 1271	1	0	10	00	0
+# 1291	1	0	10	00	1
+# 1311	1	0	10	00	0
+# 1331	1	0	10	00	1
+# 1351	1	0	10	00	0
 # END TEST CASE 5
 # Testbench completed.
 # ** Note: $stop    : ../tb/test_bench.sv(124)
@@ -110,5 +112,5 @@
 # vsim -i -view vsim.wlf -do "add wave vsim: /_if/*; radix -decimal" &
 # make[1]: Leaving directory '/home/phamgiang/push_git/test/sim'
 # Reading pref.tcl
-# End time: 13:42:07 on Jul 16,2025, Elapsed time: 0:01:43
+# End time: 17:04:20 on Jul 16,2025, Elapsed time: 0:00:20
 # Errors: 0, Warnings: 8

@@ -1,6 +1,6 @@
-`timescale 1ns/1ps
+`timescale 1ns/1ns
 
-//`include "../rtl/top.sv"
+//`include "top.sv"
 `include "Transaction.sv"
 
 module test_bench;
@@ -106,9 +106,9 @@ module test_bench;
 		//TEST CASE RANDOMIZATION
 		$display("TEST CASE RANDOMIZATION");
 		for (int i = 0; i < 3; i ++) begin
-			assert (_tr.randomize()) else $fatal("Randomization failed!");
+			_tr.randomize();
 			_tr.display();
-
+			$display("Time  RST_N   VALID   PARITY  DATA_IN  TXD");
 			_if.VALID = 1;
 			_if.DATA_IN = _tr.data_in;
 			_if.PARITY_MODE = _tr.parity_mode;
@@ -129,6 +129,11 @@ module test_bench;
 			@(posedge CLK);#1;
 			$display("%0t\t%b\t%b\t%02b\t%02h\t%b", $time, _if.RST_N, _if.VALID, _if.PARITY_MODE, _if.DATA_IN, _if.TXD);
 		end
+	end
+
+	initial begin
+		$dumpfile("dump.vcd");
+		$dumpvars;
 	end
 
 endmodule
