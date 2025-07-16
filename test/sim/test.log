@@ -1,5 +1,5 @@
 # vsim -debugDB -l test.log -voptargs="+acc" -assertdebug -c test_bench -do "log -r /*; run -all;" 
-# Start time: 11:43:16 on Jul 16,2025
+# Start time: 11:38:50 on Jul 16,2025
 # Loading sv_std.std
 # Loading work.test_bench_sv_unit
 # Loading work.test_bench
@@ -106,9 +106,9 @@
 # Break in Module test_bench at ../tb/test_bench.sv line 124
 # Stopped at ../tb/test_bench.sv line 124
 # 
-# make[1]: Entering directory '/home/phamgiang/push_git/test/sim'
+# make[1]: Entering directory '/home/phamgiang/ModelSim_project/test/sim'
 # vsim -i -view vsim.wlf -do "add wave vsim: /_if/*; radix -decimal" &
-# make[1]: Leaving directory '/home/phamgiang/push_git/test/sim'
+# make[1]: Leaving directory '/home/phamgiang/ModelSim_project/test/sim'
 # Reading pref.tcl
-# End time: 11:43:37 on Jul 16,2025, Elapsed time: 0:00:21
+# End time: 11:42:02 on Jul 16,2025, Elapsed time: 0:03:12
 # Errors: 0, Warnings: 8
