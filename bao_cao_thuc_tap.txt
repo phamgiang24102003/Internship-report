@@ -33,4 +33,4 @@ Công việc làm được:
 Công việc muốn hoàn thành trước ngày 28/07:
 - Đọc xong các mục 8, 9, 11 tài liệu "SystemVerilog for Verification"
 - Nắm được Functional Coverage và UVM
-- Xây dựng một testbench hoàn chỉnh
+- Xây dựng một testbench hoàn chỉnh với các khối cơ bản
