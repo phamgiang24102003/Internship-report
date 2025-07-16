@@ -1,3 +1,5 @@
+# Mô tả testbench
+
 Code trong thư mục test đang kiểm thử không sử dụng Randomization do hạn chế của công cụ Modelsim
 
 Đây là link EDA Playground sử dụng công cụ Synopsys VCS: https://www.edaplayground.com/x/7x9c
