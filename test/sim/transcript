@@ -7,3 +7,4 @@
 # decimal
 # 
 # stdin: <EOF>
+add wave -position insertpoint vsim:/test_bench/_if/*

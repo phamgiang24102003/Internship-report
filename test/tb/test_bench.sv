@@ -18,7 +18,7 @@ module test_bench;
 		_tr = new();
 
 		// TEST CASE 1: TEST RESET
-		$display("TEST CASE 1: TEST RESET");
+		$display("TEST CASE 1: TEST RESET HIGH");
 		$display("Time  RST_N   VALID   PARITY  DATA_IN  TXD");
 		_if.RST_N = 0;
 		_if.VALID = 0;
@@ -34,7 +34,7 @@ module test_bench;
 		$display("END TEST CASE 1");
 
 		// TEST CASE 2: TEST VALID
-		$display("TEST CASE 2: TEST VALID");
+		$display("TEST CASE 2: TEST VALID LOW");
 		$display("Time  RST_N   VALID   PARITY  DATA_IN  TXD");
 		_if.RST_N = 0;
 		_if.VALID = 0;
@@ -126,7 +126,7 @@ module test_bench;
 
 	initial begin
 		forever begin
-			@(posedge CLK);
+			@(posedge CLK);#1;
 			$display("%0t\t%b\t%b\t%02b\t%02h\t%b", $time, _if.RST_N, _if.VALID, _if.PARITY_MODE, _if.DATA_IN, _if.TXD);
 		end
 	end
