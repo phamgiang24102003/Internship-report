@@ -3,7 +3,7 @@ Code trong thư mục test đang kiểm thử không sử dụng Randomization d
 Đây là link EDA Playground sử dụng công cụ Synopsys VCS: https://www.edaplayground.com/x/7x9c
 
 Ảnh kết quả:
-<img width="1860" height="862" alt="Screenshot 2025-07-16 121725" src="https://github.com/user-attachments/assets/0878f52d-a3ca-436b-9842-3cbdeac82d96" />
+<img width="1863" height="880" alt="Screenshot 2025-07-16 134659" src="https://github.com/user-attachments/assets/6f3a352d-382f-4d86-8614-0a72eef76125" />
 
 # Specification
 
