@@ -1,0 +1,114 @@
+# vsim -debugDB -l test.log -voptargs="+acc" -assertdebug -c test_bench -do "log -r /*; run -all;" 
+# Start time: 11:43:16 on Jul 16,2025
+# Loading sv_std.std
+# Loading work.test_bench_sv_unit
+# Loading work.test_bench
+# Loading work.tb_if
+# Loading work.top
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+# log -r /*
+#  run -all
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# Starting TEST BENCH...
+# TEST CASE 1: TEST RESET
+# Time  RST_N   VALID   PARITY  DATA_IN  TXD
+# 10000	0	0	00	00	0
+# 30000	0	1	01	ff	0
+# END TEST CASE 1
+# TEST CASE 2: TEST VALID
+# Time  RST_N   VALID   PARITY  DATA_IN  TXD
+# 50000	0	0	00	00	0
+# 70000	1	0	01	ff	0
+# 90000	1	0	01	ff	0
+# 110000	1	0	01	ff	0
+# 130000	1	0	01	ff	0
+# 150000	1	0	01	ff	0
+# 170000	1	0	01	ff	0
+# 190000	1	0	01	ff	0
+# 210000	1	0	01	ff	0
+# 230000	1	0	01	ff	0
+# 250000	1	0	01	ff	0
+# 270000	0	0	00	00	0
+# 290000	0	0	00	00	0
+# 310000	0	0	00	00	0
+# 330000	0	0	00	00	0
+# 350000	0	0	00	00	0
+# 370000	0	0	00	00	0
+# 390000	0	0	00	00	0
+# 410000	0	0	00	00	0
+# 430000	0	0	00	00	0
+# 450000	0	0	00	00	0
+# END TEST CASE 2
+# 470000	1	0	00	00	0
+# TEST CASE 3: PARITY_MODE = {00 11}, DATA_IN = {8'ha3 8'hFF}
+# Time  RST_N   VALID   PARITY  DATA_IN  TXD
+# 490000	1	1	00	a3	0
+# 510000	1	0	00	00	0
+# 530000	1	0	00	00	1
+# 550000	1	0	00	00	1
+# 570000	1	0	00	00	0
+# 590000	1	0	00	00	0
+# 610000	1	0	00	00	0
+# 630000	1	0	00	00	1
+# 650000	1	0	00	00	0
+# 670000	1	0	00	00	1
+# 690000	1	0	00	00	0
+# 710000	1	1	11	ff	0
+# 730000	1	0	11	00	0
+# 750000	1	0	11	00	1
+# 770000	1	0	11	00	1
+# 790000	1	0	11	00	1
+# 810000	1	0	11	00	1
+# 830000	1	0	11	00	1
+# 850000	1	0	11	00	1
+# 870000	1	0	11	00	1
+# 890000	1	0	11	00	1
+# 910000	1	0	11	00	0
+# END TEST CASE 3
+# TEST CASE 4: PARITY_MODE = 01, DATA_IN = 8'hF4
+# Time  RST_N   VALID   PARITY  DATA_IN  TXD
+# 930000	1	1	01	f4	0
+# 950000	1	0	01	00	0
+# 970000	1	0	01	00	0
+# 990000	1	0	01	00	0
+# 1010000	1	0	01	00	1
+# 1030000	1	0	01	00	0
+# 1050000	1	0	01	00	1
+# 1070000	1	0	01	00	1
+# 1090000	1	0	01	00	1
+# 1110000	1	0	01	00	1
+# 1130000	1	0	01	00	0
+# END TEST CASE 4
+# TEST CASE 5: PARITY_MODE = 10, DATA_IN = 8'h4F
+# Time  RST_N   VALID   PARITY  DATA_IN  TXD
+# 1150000	1	1	10	4f	0
+# 1170000	1	0	10	00	0
+# 1190000	1	0	10	00	1
+# 1210000	1	0	10	00	1
+# 1230000	1	0	10	00	1
+# 1250000	1	0	10	00	1
+# 1270000	1	0	10	00	0
+# 1290000	1	0	10	00	0
+# 1310000	1	0	10	00	1
+# 1330000	1	0	10	00	0
+# 1350000	1	0	10	00	1
+# END TEST CASE 5
+# Testbench completed.
+# ** Note: $stop    : ../tb/test_bench.sv(124)
+#    Time: 1370 ns  Iteration: 0  Instance: /test_bench
+# Break in Module test_bench at ../tb/test_bench.sv line 124
+# Stopped at ../tb/test_bench.sv line 124
+# 
+# make[1]: Entering directory '/home/phamgiang/push_git/test/sim'
+# vsim -i -view vsim.wlf -do "add wave vsim: /_if/*; radix -decimal" &
+# make[1]: Leaving directory '/home/phamgiang/push_git/test/sim'
+# Reading pref.tcl
+# End time: 11:43:37 on Jul 16,2025, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 8
